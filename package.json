@@ -2,6 +2,7 @@
   "name": "it-incubator-todolist-ts",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/KlimovaED/todolistWithSaga",
   "dependencies": {
     "@material-ui/core": "^4.10.1",
     "@material-ui/icons": "^4.9.1",
@@ -30,6 +31,8 @@
     "uuid": "^8.0.0"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+     "deploy": "gh-pages -d build",
     "start": " NODE_OPTIONS=--openssl-legacy-provider  react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
